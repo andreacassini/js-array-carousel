@@ -1,8 +1,8 @@
 //ARRAY IMMAGINI
-let picsList = ['assets/./img/01.webp','assets/./img/02.webp','assets/./img/03.webp','assets/./img/04.webp','assets/./img/05.webp']
+let picsList = ['./assets/img/01.webp','./assets/img/02.webp','./assets/img/03.webp','./assets/img/04.webp','./assets/img/05.webp']
 
 //VAR sliderElem
-let sliderElem = document.querySelector('.slider');
+const sliderElem = document.querySelector('.slider');
 
 let sliderImages = "";
 
@@ -18,8 +18,8 @@ for (let i = 0; i < picsList.length; i++){
 
 sliderElem.innerHTML += sliderImages;
 
-let slide = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');
 
 let activeSlider = 0;
 
-slide[activeSlider].classList.add('active');
+slides[activeSlider].classList.add('active');
